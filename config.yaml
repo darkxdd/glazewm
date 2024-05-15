@@ -59,7 +59,7 @@ bar:
       displayed_workspace_background: "#00000033"
       default_workspace_background: "transparent"
     - type: "text"
-      text: "  |  "
+      text: " | "
     - type: "weather"
       latitude: 17.34187
       longitude: 78.477485
@@ -75,25 +75,30 @@ bar:
       label_thunderstorm: "⚡ {temperature_celsius}°C"
       label_cloud: "☁️ {temperature_celsius}°C"
     - type: "text"
-      text: "  |  "
+      text: " | "
     - type: 'image'
       source: 'C:\\Users\\Puneeth\\configs\\glazewm\\1.png'
-      margin: '2px 5px 0 0'
+      margin: '0px 3px 0 0'
     - type: 'image'
       source: 'C:\\Users\\Puneeth\\configs\\glazewm\\2.png'
-      margin: '2px 5px 0 0'
+      margin: '0px 3px 0 0'
     - type: 'image'
       source: 'C:\\Users\\Puneeth\\configs\\glazewm\\3.png'
-      margin: '2px 5px 0 0'
+      margin: '0px 3px 0 0'
     - type: 'image'
       source: 'C:\\Users\\Puneeth\\configs\\glazewm\\4.png'
-      margin: '2px 5px 0 0'
+      margin: '0px 3px 0 0'
+    - type: "text"
+      text: "|"
+    - type: "volume"
+      label_low: "🔈{volume_level}%"
+      label_medium: "🔉{volume_level}%"
+      label_high: "🔊{volume_level}%"
+      label_mute: "🔇"
   components_center:
     - type: "window title" 
   components_right:
     - type: "system tray"
-    - type: "text"
-      text: " |"
     - type: "tiling direction"
       label_horizontal: "⮂"
       label_vertical: "⮁"
@@ -104,17 +109,10 @@ bar:
       background: "#ffffff33"
       margin: "0 4px 0 0"
       padding: "0 8px"
-    - type: "text"
-      text: "| "
-    - type: "volume"
-      label_low: " 🔈{volume_level}%  "
-      label_medium: " 🔉{volume_level}%  "
-      label_high: " 🔊{volume_level}%  "
-      label_mute: " 🔇  "
     - type: "clock"
       # Documentation on formatting date/time string:
       # https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
-      time_formatting: " |  hh:mm tt  |  ddd MMM d  | "
+      time_formatting: "| hh:mm tt | ddd MMM d | "
     - type: "network"
       label_no_internet: "📡"
       label_ethernet: "🔌"
@@ -124,9 +122,9 @@ bar:
       label_wifi_strength_75: "WiFi: 75%"
       label_wifi_strength_100: "WiFi: 100%"
     - type: "battery"
-      label_draining: " |  {battery_level}% 🔋"
-      label_power_saver: " |  {battery_level}% 🌱"
-      label_charging: " |  {battery_level}% ⚡"
+      label_draining: " | {battery_level}% 🔋"
+      label_power_saver: " | {battery_level}% 🌱"
+      label_charging: " | {battery_level}% ⚡"
 
 workspaces:
   - name: "1"
