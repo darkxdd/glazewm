@@ -89,7 +89,7 @@ bar:
       source: 'C:\\Users\\Puneeth\\configs\\glazewm\\4.png'
       margin: '0px 3px 0 0'
     - type: "text"
-      text: "|"
+      text: "| "
     - type: "volume"
       label_low: "🔈{volume_level}%"
       label_medium: "🔉{volume_level}%"
